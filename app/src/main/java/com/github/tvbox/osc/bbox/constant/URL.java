@@ -2,7 +2,6 @@ package com.github.tvbox.osc.bbox.constant;
 
 public class URL {
     public static String DOMAIN_NAME_PROXY = "";
-    public static final String GITHUB_VERSION_PATH = "https://hfr1107.github.io/up/box/main/version.json";
     public static final String APK_PATH = "https://hfr1107.github.io/up/box/main/app-release.apk";
     public static final String APK_PATH = "https://raw.githubusercontent.com/hfr1107/box/main/Release/app-release.apk";
     // public static final String DOMAIN_NAME_PROXY = "http://192.168.3.159:81";
