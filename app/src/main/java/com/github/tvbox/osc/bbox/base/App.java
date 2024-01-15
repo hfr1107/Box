@@ -94,7 +94,7 @@ public class App extends MultiDexApplication {
             // 设置是否支持静默安装，默认是true
             .supportSilentInstall(false)
             // 这个必须设置！实现网络请求功能。
-            // .setIUpdateHttpService(new OkGoUpdateHttpService())
+            .setIUpdateHttpService(new OkGoUpdateHttpService())
             // 这个必须初始化
             .init(this);
     }
