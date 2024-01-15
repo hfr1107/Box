@@ -52,14 +52,14 @@ public class StoreApiConfig {
 
     public void Subscribe(Context context) {
 
-        Toast.makeText(context, "开始获取订阅，网络慢的话可能需要较长时间！！！", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "路尧为你加速获取资源，请耐心等待！！！", Toast.LENGTH_SHORT).show();
 
         // 获取多仓地址
         HashMap<String, String> storeMap = Hawk.get(HawkConfig.STORE_API_MAP, new HashMap<>());
         ArrayList<String> storeNameHistory = Hawk.get(HawkConfig.STORE_API_NAME_HISTORY, new ArrayList<>());
 
         if (storeMap.isEmpty()) {
-            Toast.makeText(context, "仓库为空，使用默认仓库", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "开挂中，自动获取优质字眼", Toast.LENGTH_SHORT).show();
             String name = "黄氏专线仓库";
             String sotreApi = Hawk.get(HawkConfig.DEFAULT_STORE_API, Hawk.get(HawkConfig.PROXY_URL, "https://raw.bunnylblbblbl.eu.org/") + URL.DEFAULT_STORE_API_URL);
             storeMap.put(name, sotreApi);
@@ -125,7 +125,7 @@ public class StoreApiConfig {
                             });
                         }
                     }
-                    Toast.makeText(context, "多仓订阅结束，到多源历史中切换！！！", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, "获取成功，请切换……多源历史……", Toast.LENGTH_SHORT).show();
                 } else {
                     // 单源链接，直接请求
                     // 获取单源中的配置线路
