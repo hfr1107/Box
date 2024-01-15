@@ -17,7 +17,7 @@ public class URL {
     // 默认仓库线路
     public static final String DEFAULT_STORE_API_URL = "https://hfr1107.github.io/up/dc.json";
     // 默认直播线路
-    public static final String DEFAULT_LIVE_URL = "https://hfr1107.github.io/up/tv/tv.json";
+    public static final String DEFAULT_LIVE_URL = "https://hfr1107.github.io/up/tv/tv.txt";
 
 
 }
