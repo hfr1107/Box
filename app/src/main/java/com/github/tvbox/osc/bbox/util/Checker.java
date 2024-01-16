@@ -87,7 +87,7 @@ public class Checker {
                     .build();
         }
 
-        OkGo.<String>get(URL.DOMAIN_NAME_PROXY)
+        OkGo.<String>get(url)
                 .client(mClient)
                 .execute(new StringCallback() {
 
@@ -139,7 +139,7 @@ public class Checker {
                             checkProxy(isAvailable -> {
                                 if (isAvailable) {
                                     LOG.i("可用链接: " + url);
-                                    listener.available(url + URL.DOMAIN_NAME_PROXY);
+                                    listener.available(url);
                                 }
                             }, url);
                         }
