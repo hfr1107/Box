@@ -50,7 +50,7 @@ public class Checker {
                     .build();
         }
 
-        OkGo.<String>get(url)
+        OkGo.<String>get(URL.DOMAIN_NAME_PROXY)
                 .client(mClient)
                 .execute(new StringCallback() {
 
