@@ -50,7 +50,7 @@ public class Checker {
                     .build();
         }
 
-        OkGo.<String>get(URL.DOMAIN_NAME_PROXY)
+        OkGo.<String>get(url)
                 .client(mClient)
                 .execute(new StringCallback() {
 
@@ -148,7 +148,7 @@ public class Checker {
                     @Override
                     public void onError(Response<String> response) {
                         super.onError(response);
-                        // LOG.i("urls.txt不存在使用默认代理链接: " + URL.DOMAIN_NAME_PROXY);
+                        // LOG.i("urls.txt不存在使用默认代理链接: ");
                     }
 
                     @Override
