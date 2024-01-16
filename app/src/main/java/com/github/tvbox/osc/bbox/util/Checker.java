@@ -40,7 +40,42 @@ public class Checker {
         return instance;
     }
 
+    public void checkProxy(OnProxyAvailableListener onProxyAvailableListener) {
 
+        if (mClient == null) {
+            mClient = new OkHttpClient.Builder()
+                    .connectTimeout(5, TimeUnit.SECONDS)
+                    .readTimeout(5, TimeUnit.SECONDS)
+                    .writeTimeout(5, TimeUnit.SECONDS)
+                    .build();
+        }
+
+        OkGo.<String>get(url)
+                .client(mClient)
+                .execute(new StringCallback() {
+
+                    boolean isAvailable;
+
+                    @Override
+                    public void onSuccess(Response<String> response) {
+                        isAvailable = true;
+                    }
+
+                    @Override
+                    public void onError(Response<String> response) {
+                        super.onError(response);
+                        isAvailable = false;
+                    }
+
+                    @Override
+                    public void onFinish() {
+                        super.onFinish();
+                        if (onProxyAvailableListener != null) {
+                            onProxyAvailableListener.available(isAvailable);
+                        }
+                    }
+                });
+    }
 
     public void checkProxy(OnProxyAvailableListener onProxyAvailableListener, String url) {
 
