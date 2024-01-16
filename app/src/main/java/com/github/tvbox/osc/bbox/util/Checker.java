@@ -139,7 +139,7 @@ public class Checker {
                             checkProxy(isAvailable -> {
                                 if (isAvailable) {
                                     LOG.i("可用链接: " + url);
-                                    listener.available(url);
+                                    listener.available(url + URL.DOMAIN_NAME_PROXY);
                                 }
                             }, url);
                         }
