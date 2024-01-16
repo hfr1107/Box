@@ -111,7 +111,7 @@ public class App extends MultiDexApplication {
         putDefault(HawkConfig.IJK_CODEC, "硬解码");
         putDefault(HawkConfig.HOME_REC_STYLE, false);// 首页多行
 
-        putDefault(HawkConfig.PROXY_URL, URL.DOMAIN_NAME_PROXY);
+        putDefault(HawkConfig.PROXY_URL);
         // 默认换台反转
         putDefault(HawkConfig.LIVE_CHANNEL_REVERSE, true);
         // 默认显示时间
@@ -150,7 +150,7 @@ public class App extends MultiDexApplication {
     }
 
     private void putDefaultApis() {
-        String url = URL.DOMAIN_NAME_PROXY;
+
 
         // 默认加速历史记录
         List<String> proxyUrlHistory = Hawk.get(HawkConfig.PROXY_URL_HISTORY, new ArrayList<>());
