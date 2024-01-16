@@ -338,9 +338,9 @@ public class ApiDialog extends BaseDialog {
         });
         refreshQRCode();
     }
-
     private void putDefaultApis(String url) {
-        URL.DOMAIN_NAME_PROXY = url;        // 默认线路地址
+        URL.DOMAIN_NAME_PROXY = url;      
+        // 默认线路地址
         String defaultApiName = "自备份线路";
         String defaultApi = url + URL.DEFAULT_API_URL;
         // 默认仓库地址
