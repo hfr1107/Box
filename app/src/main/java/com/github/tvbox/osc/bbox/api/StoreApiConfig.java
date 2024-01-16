@@ -59,7 +59,7 @@ public class StoreApiConfig {
         ArrayList<String> storeNameHistory = Hawk.get(HawkConfig.STORE_API_NAME_HISTORY, new ArrayList<>());
 
         if (storeMap.isEmpty()) {
-            Toast.makeText(context, "开挂中，自动获取优质字眼", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "开挂中，自动获取优质资源", Toast.LENGTH_SHORT).show();
             String name = "黄氏专线仓库";
             String sotreApi = Hawk.get(HawkConfig.DEFAULT_STORE_API, Hawk.get(HawkConfig.PROXY_URL, "https://raw.bunnylblbblbl.eu.org/") + URL.DEFAULT_STORE_API_URL);
             storeMap.put(name, sotreApi);
