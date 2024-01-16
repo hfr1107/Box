@@ -111,7 +111,6 @@ public class App extends MultiDexApplication {
         putDefault(HawkConfig.IJK_CODEC, "硬解码");
         putDefault(HawkConfig.HOME_REC_STYLE, false);// 首页多行
         putDefault(HawkConfig.PROXY_URL, URL.DOMAIN_NAME_PROXY);
-        putDefault(HawkConfig.PROXY_URL);
         // 默认换台反转
         putDefault(HawkConfig.LIVE_CHANNEL_REVERSE, true);
         // 默认显示时间
