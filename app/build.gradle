@@ -6,9 +6,9 @@ android {
     signingConfigs {
         sigin {
             storeFile file("BUNNY.jks")
-            storePassword "000624"
-            keyAlias "bunny"
-            keyPassword "426000"
+            storePassword "hj123456789"
+            keyAlias "hj123456789"
+            keyPassword "hj123456789"
         }
     }
 
