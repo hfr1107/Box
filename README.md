@@ -1,6 +1,6 @@
 #  box
 [更新配置](https://github.com/hfr1107/up/edit/main/box/main/version.json)：[https://hfr1107.github.io/up/box/main/version.json](https://hfr1107.github.io/up/box/main/version.json)
-[下载地址](https://github.com/hfr1107/box/upload/main/Release)：[https://github.com/hfr1107/box/tree/main/Release](https://github.com/hfr1107/box/tree/main/Release)
+</br>[下载地址](https://github.com/hfr1107/box/upload/main/Release)：[https://github.com/hfr1107/box/tree/main/Release](https://github.com/hfr1107/box/tree/main/Release)</br></br>
 #### 源项目
 #### https://github.com/CatVodTVOfficial/TVBoxOSC
 
