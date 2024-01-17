@@ -177,7 +177,7 @@ public class App extends MultiDexApplication {
         putDefault(HawkConfig.API_MAP, defaultApiMap);
         // 不添加默认直播源
         putDefault(HawkConfig.LIVE_URL, URL.DEFAULT_LIVE_URL);
-
+        //putDefault(HawkConfig.DEFAULT_STORE_API_URL, URL.DEFAULT_LIVE_URL);
         putDefault(HawkConfig.DEFAULT_STORE_API, defaultStoreApi);
         putDefault(HawkConfig.PROXY_URL_HISTORY, proxyUrlHistory);
     }
