@@ -109,7 +109,7 @@ public class App extends MultiDexApplication {
         // 默认渲染方式：推荐手机使用0-texture，电视1-surface
         putDefault(HawkConfig.PLAY_RENDER, 1);
         putDefault(HawkConfig.IJK_CODEC, "硬解码");
-        putDefault(HawkConfig.HOME_REC_STYLE, false);// 首页多行
+        putDefault(HawkConfig.HOME_REC_STYLE, true);// 首页多行true是，false否
         putDefault(HawkConfig.PROXY_URL, URL.DOMAIN_NAME_PROXY);
         // 默认换台反转
         putDefault(HawkConfig.LIVE_CHANNEL_REVERSE, true);
@@ -163,7 +163,7 @@ public class App extends MultiDexApplication {
         String defaultApi = URL.DEFAULT_API_URL;
         // 默认仓库地址
         String defaultStoreApi = URL.DEFAULT_STORE_API_URL;
-
+      
         Map<String, String> defaultApiMap = Hawk.get(HawkConfig.API_MAP, new HashMap<>());
         defaultApiMap.put(defaultApiName, defaultApi);
 
@@ -177,7 +177,7 @@ public class App extends MultiDexApplication {
         putDefault(HawkConfig.API_MAP, defaultApiMap);
         // 不添加默认直播源
         putDefault(HawkConfig.LIVE_URL, URL.DEFAULT_LIVE_URL);
-        //putDefault(HawkConfig.DEFAULT_STORE_API_URL, URL.DEFAULT_LIVE_URL);
+        
         putDefault(HawkConfig.DEFAULT_STORE_API, defaultStoreApi);
         putDefault(HawkConfig.PROXY_URL_HISTORY, proxyUrlHistory);
     }
