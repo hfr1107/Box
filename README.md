@@ -1,8 +1,5 @@
-# Jade box
-
-### [竖屏版(存在问题：看不了玩偶；未解决，暂时不搞了)](https://github.com/mlabalabala/TVBoxOS-Mobile)
-### [横屏版](https://github.com/mlabalabala/box)
-###
+#  box
+[更新配置](https://github.com/hfr1107/up/edit/main/box/main/version.json)：[https://hfr1107.github.io/up/box/main/version.json](https://hfr1107.github.io/up/box/main/version.json)
 #### 源项目
 #### https://github.com/CatVodTVOfficial/TVBoxOSC
 
@@ -11,7 +8,6 @@
 #### https://github.com/CatVodTVOfficial/TVBoxOSC
 #### https://github.com/q215613905/TVBoxOS
 #### https://github.com/takagen99/Box
-#### [竖屏版源项目    https://github.com/XiaoRanLiu3119/TVBoxOS-Mobile](https://github.com/XiaoRanLiu3119/TVBoxOS-Mobile)
 
 ---
 #### 数据源参考
