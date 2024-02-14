@@ -57,7 +57,7 @@ public class StoreApiConfig {
         // 获取多仓地址
         HashMap<String, String> storeMap = Hawk.get(HawkConfig.STORE_API_MAP, new HashMap<>());
         ArrayList<String> storeNameHistory = Hawk.get(HawkConfig.STORE_API_NAME_HISTORY, new ArrayList<>());
-
+        /*
         if (storeMap.isEmpty()) {
             Toast.makeText(context, "开挂中，自动获取优质资源", Toast.LENGTH_SHORT).show();
             String name = "黄氏专线仓库";
@@ -69,8 +69,8 @@ public class StoreApiConfig {
             Hawk.put(HawkConfig.STORE_API_MAP, storeMap);
             Hawk.put(HawkConfig.STORE_API, sotreApi);
         }
-
-        String storeUrl = storeMap.get(Hawk.get(HawkConfig.STORE_API_NAME, ""));
+        */
+        String storeUrl = storeMap.isEmpty() ? URL.DEFAULT_STORE_API_URL:storeMap.get(Hawk.get(HawkConfig.STORE_API_NAME, ""));
 
         LOG.i("订阅仓库地址：" + storeUrl);
 
@@ -132,7 +132,7 @@ public class StoreApiConfig {
                     String result = MutiUrl(sourceJson);
                     Toast.makeText(context, "单源链接，" + result, Toast.LENGTH_SHORT).show();
                     String currentStoreName = Hawk.get(HawkConfig.STORE_API_NAME, "");
-                    if (!storeNameHistory.contains(currentStoreName)) {
+                    if (!currentStoreName.isEmpty() && !storeNameHistory.contains(currentStoreName)) {
                         storeNameHistory.add(0, currentStoreName);
                     }
                 }
@@ -142,7 +142,7 @@ public class StoreApiConfig {
 
             @Override
             public void error(String msg) {
-                Toast.makeText(context, msg, Toast.LENGTH_LONG).show();
+                Toast.makeText(context, msg, Toast.LENGTH_SHORT).show();
             }
         });
     }
