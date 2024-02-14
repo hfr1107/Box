@@ -159,7 +159,7 @@ public class App extends MultiDexApplication {
         proxyUrlHistory.add("https://ghps.cc/");
         proxyUrlHistory.add("https://raw.bunnylblbblbl.eu.org/");
         // 默认线路地址
-        String defaultApiName = "黄氏专线";
+        String defaultApiName = "默认线路";
         String defaultApi = URL.DEFAULT_API_URL;
         // 默认仓库地址
         String defaultStoreApi = URL.DEFAULT_STORE_API_URL;
