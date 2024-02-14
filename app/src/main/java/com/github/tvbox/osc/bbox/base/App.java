@@ -162,7 +162,7 @@ public class App extends MultiDexApplication {
         // 默认仓库地址
         String defaultStoreApi = URL.DEFAULT_STORE_API_URL;
       
-        Map<String, String> defaultApiMap = Hawk.get(HawkConfig.API_MAP, new HashMap<>());
+        // Map<String, String> defaultApiMap = Hawk.get(HawkConfig.API_MAP, new HashMap<>());
         defaultApiMap.put(defaultApiName, defaultApi);
 
         List<String> defaultApiHistory = Hawk.get(HawkConfig.API_NAME_HISTORY, new ArrayList<>());
